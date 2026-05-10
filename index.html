@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio — selected work and projects." />
+  <title>Portfolio — Francisco Fuentes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="nav" data-reveal>
+    <a href="#top" class="nav__brand">
+      <span class="nav__dot" aria-hidden="true"></span>
+      <span class="nav__name">FRANCISCO<span class="accent">/</span>FUENTES</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav__cta">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__bullet" aria-hidden="true"></span>
+        My Portfolio &mdash; Q2 2026
+      </p>
+
+      <h1 class="hero__title">
+        <span class="line"><span>Francisco</span></span>
+        <span class="line"><span>Fuentes<span class="accent">.</span></span></span>
+        <span class="line line--small"><span>Business &amp; <em>Technology</em></span></span>
+      </h1>
+
+      <div class="hero__meta" data-reveal>
+        <p class="hero__bio">
+          MIS student building expertise in data analysis and technical problem-solving.
+        </p>
+        <a href="#work" class="hero__scroll">
+          <span>See the work</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Business</span><span aria-hidden="true">✦</span>
+        <span>Technology</span><span aria-hidden="true">✦</span>
+        <span>Data</span><span aria-hidden="true">✦</span>
+        <span>Systems</span><span aria-hidden="true">✦</span>
+        <span>Strategy</span><span aria-hidden="true">✦</span>
+        <span>Research</span><span aria-hidden="true">✦</span>
+        <span>Business</span><span aria-hidden="true">✦</span>
+        <span>Technology</span><span aria-hidden="true">✦</span>
+        <span>Data</span><span aria-hidden="true">✦</span>
+        <span>Systems</span><span aria-hidden="true">✦</span>
+        <span>Strategy</span><span aria-hidden="true">✦</span>
+        <span>Research</span><span aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <p class="section-label" data-reveal>
+        <span class="section-label__num">01</span>
+        <span>About</span>
+      </p>
+      <div class="about__grid">
+        <h2 class="about__heading" data-reveal>
+          Software, <br/>
+          <em>systems</em>,<br/>
+          and the space<br/>
+          <span class="accent-block">between</span>.
+        </h2>
+        <div class="about__body" data-reveal>
+          <p>
+            I am currently a full-time student majoring in Management Information Systems at the University of Houston. I am passionate about technology and using it to solve real world problems.
+          </p>
+          <p>
+            As a 2026 graduate, I've had the privilege of working on plenty of projects that have allowed me to build and grow my expertise in the technical business field.
+          </p>
+          <ul class="about__facts">
+            <li><span>Based in</span><strong>Houston, TX</strong></li>
+            <li><span>Currently</span><strong>Open to work</strong></li>
+            <li><span>Stack</span><strong>Web / Data</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <p class="section-label section-label--light" data-reveal>
+        <span class="section-label__num">02</span>
+        <span>Selected projects</span>
+      </p>
+      <h2 class="work__heading" data-reveal>
+        Projects I've<br/>
+        <em>worked</em> on.
+      </h2>
+
+      <div class="projects" id="projects" role="list"></div>
+    </section>
+
+    <section class="skills" id="skills">
+      <p class="section-label" data-reveal>
+        <span class="section-label__num">03</span>
+        <span>Toolkit</span>
+      </p>
+      <h2 class="skills__heading" data-reveal>What I work with.</h2>
+      <ul class="skills__grid" id="skills-grid"></ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-label section-label--light" data-reveal>
+        <span class="section-label__num">04</span>
+        <span>Contact</span>
+      </p>
+      <h2 class="contact__heading" data-reveal>
+        Let's <em>connect</em>.
+      </h2>
+      <a href="mailto:franciscoxfuentes@gmail.com" class="contact__email" data-reveal>
+        franciscoxfuentes@gmail.com
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M5 15L15 5M7 5h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <ul class="contact__links" data-reveal>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; <span id="year"></span> Francisco Fuentes</span>
+    <span class="footer__meta">Built from scratch &mdash; HTML, CSS, JS</span>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
