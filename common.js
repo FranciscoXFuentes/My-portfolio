@@ -17,10 +17,10 @@
 
   function placeholderSVG(index) {
     const palettes = [
-      ['#84cc16', '#0a0a0a'],
-      ['#a3e635', '#1a1a1a'],
-      ['#0a0a0a', '#84cc16'],
-      ['#fafaf5', '#84cc16'],
+      ['#1d3fa8', '#fafaf5'],
+      ['#5b7cd9', '#0a0a0a'],
+      ['#0a0a0a', '#5b7cd9'],
+      ['#fafaf5', '#1d3fa8'],
     ];
     const [bg, fg] = palettes[index % palettes.length];
     const offset = (index * 23) % 100;
@@ -67,38 +67,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
-  const cursor = document.querySelector('.cursor');
-  const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-  if (cursor && isFinePointer && !prefersReducedMotion) {
-    let x = 0, y = 0, tx = 0, ty = 0;
-
-    window.addEventListener('mousemove', (e) => {
-      tx = e.clientX;
-      ty = e.clientY;
-      cursor.classList.add('is-visible');
-    });
-    window.addEventListener('mouseleave', () =>
-      cursor.classList.remove('is-visible')
-    );
-
-    const tick = () => {
-      x += (tx - x) * 0.18;
-      y += (ty - y) * 0.18;
-      cursor.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-      requestAnimationFrame(tick);
-    };
-    tick();
-
-    const hoverables = 'a, button, .project, .skill, [data-magnetic]';
-    document.addEventListener('mouseover', (e) => {
-      if (e.target.closest(hoverables)) cursor.classList.add('is-hover');
-    });
-    document.addEventListener('mouseout', (e) => {
-      if (e.target.closest(hoverables)) cursor.classList.remove('is-hover');
-    });
-  }
-
-  const heroTitle = document.querySelector('.hero__title');
+const heroTitle = document.querySelector('.hero__title');
   if (heroTitle) {
     if (prefersReducedMotion) {
       heroTitle.classList.add('is-revealed');
